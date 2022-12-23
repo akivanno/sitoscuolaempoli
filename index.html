@@ -17,6 +17,9 @@
         max-width: 40%;
         margin: auto;
     }
+    #aperto_adesso{
+        border: 2px solid black;
+    }
 </style>
 
 <head>
@@ -36,6 +39,16 @@
     Qui i vostri ragazzi saranno accolti e preparati per una crescita personale e per il mondo che gli aspetter&agrave; al di fuori della struttura,
     senza dimenticarsi della comunicazione e l'interazione tra coetani e aggiungendo dialogo con persone 
     adulte che non &egrave; orientato esclusivamente all'insegnamento.</p>
+    <div id='aperto_adesso'>
+    </div>
 </body>
-
+<script>
+  var oggi = Date().getDay()  
+  if ( oggi <= 5){
+    document.getElementById('aperto_adesso').innerHTLM = "Puoi venirci a trovare oggi dalle 9 alle 13!!!"
+  }
+  else{
+    document.getElementById('aperto_adesso').innerHTLM = "Puoi venirci a trovare luned&igrave; dalle 9 alle 13!!!"
+  }
+</script>
 </html>
